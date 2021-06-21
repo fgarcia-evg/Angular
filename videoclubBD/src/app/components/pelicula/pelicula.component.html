@@ -1,0 +1,45 @@
+<div class="section section-inset-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12">
+        <section class="section-inset-2">
+          <h2>{{ pelicula.titulo | uppercase }}</h2>
+          <hr>
+          <div class="row row-45">
+            <div class="col-12 col-md-12 col-lg-6 text-lg-left well1">
+              <div class="row">
+                <div class="col-sm-6"><img [src]="pelicula.portada" alt=""></div>
+                <div class="col-sm-6 text-left offset-top-30">
+                  <span class="font-weight-bold">Genero:&nbsp;</span>
+                  <span class="font-weight-light text-primary">{{pelicula.genero}}<br></span>
+                  <span class="font-weight-bold">Año de lanzamiento:&nbsp;</span>
+                  <span class="font-weight-light">{{pelicula.anio}}<br></span>
+                  <span class="font-weight-bold">Duracion:&nbsp;</span>
+                  <span class="font-weight-light">{{pelicula.duracion}}<br></span>
+                  <span class="font-weight-bold">Pais:&nbsp;</span>
+                  <span class="font-weight-light text-primary">{{pelicula.pais}}<br></span>
+                  <p>{{pelicula.sinopsis}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 text-center text-lg-left">
+              <div class="video-box-overlay"><img src="" alt="">
+                <div class="video-box">
+                  <div class="video-box-play"><a href="https://youtu.be/UUkn-enk2RU" data-lightgallery="item"><span class="icon icon-white fl-line-ui-play126"></span></a></div>
+                  <div class="video-box-inner"><a class="link-1" href="#"><span class="item-1">Ant-Man and the Wasp</span></a><span class="text-white">The Trailer</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <button class="precio">ALQUILER {{pelicula.precioAlquiler}} € </button>
+  <button class="precio">VENTA {{pelicula.precioVenta}} € </button>
+  <br><br>
+  <a [routerLink]="['/peliculas']" class="btn btn-outline-danger btn-block">Regresar </a>
+  </div>
+

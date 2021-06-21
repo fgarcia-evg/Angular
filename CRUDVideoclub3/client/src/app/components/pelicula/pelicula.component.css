@@ -1,0 +1,12 @@
+.precio
+{
+  width: 150px;
+  height: 30px;
+  margin-left: 20px;
+  background-color: red;
+}
+.regresar{
+  width: 150px;
+  height: 30px;
+  margin-left: 100px;
+}
