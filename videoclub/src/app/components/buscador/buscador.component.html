@@ -1,0 +1,19 @@
+<h1> Buscando:  <small> </small> {{ titulo }}</h1>
+
+<div class="row animated fadeIN fast" *ngIf="peliculas.length==0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el valor: {{ titulo }}
+    </div>
+  </div>
+</div>
+
+
+<div class="card-columns">
+  <!--  *ngFor="let pelicula of peliculas let i= index"-->
+
+  <app-pelicula-tarjeta [pelicula]="peli" [index]="peli.idx" *ngFor="let peli of peliculas let i= index"></app-pelicula-tarjeta>
+
+
+
+</div>

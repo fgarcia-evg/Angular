@@ -1,0 +1,17 @@
+<div class="card animated fadeIn fast" >
+  <div CLASS="imagen"> <img [src]="pelicula.portada" class="card-img-top" [alt]="pelicula.titulo"></div>
+  <div class="card-body">
+    <h5 class="card-title">{{ pelicula.titulo }}</h5>
+    <p class="card-text">{{ pelicula.sinopsis }}</p>
+    <!--      <p class="card-text"><small class="text-muted">{{ heroe.aparicion}}</small></p>-->
+
+    <button (click)="verPelicula()"
+            type="button" class="btn btn-outline-primary btn-block">Ver más ...
+    </button>
+
+
+    <!--         otra forma-->
+    <!--      <a [routerLink]="['/detalles', i]" class="btn btn-outlinb-primary"> Ver mas Link ...</a>-->
+  </div>
+
+</div>

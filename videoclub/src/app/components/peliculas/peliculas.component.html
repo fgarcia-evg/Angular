@@ -1,0 +1,9 @@
+
+<div class="card-columns">
+<!--  *ngFor="let pelicula of peliculas let i= index"-->
+
+  <app-pelicula-tarjeta (peliculaSeleccionada)="verPelicula( $event )" [pelicula]="peli" [index]="i" *ngFor="let peli of peliculas let i= index"></app-pelicula-tarjeta>
+
+
+
+</div>
